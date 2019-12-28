@@ -43,7 +43,7 @@ AppChart chart;
 bool show_chart = false;
 
 typedef uint64_t(*arc_export_func_u64)();
-auto arc_dll = LoadLibraryA(TEXT("d3d9.dll"));
+auto arc_dll = LoadLibraryA(TEXT("gw2addon_arcdps.dll"));
 auto arc_export_e6 = (arc_export_func_u64)GetProcAddress(arc_dll, "e6");
 auto arc_export_e7 = (arc_export_func_u64)GetProcAddress(arc_dll, "e7");
 WPARAM arc_global_mod1;
